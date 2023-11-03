@@ -1,0 +1,75 @@
+﻿@using KeyShop.Data.Enum
+@using KeyShop.ViewModels
+@model CreateGameViewModel
+
+@{}
+
+<form method="post" asp-action="Create" enctype="multipart/form-data">
+    <input type="hidden" id="UserId" name="UserId" asp-for="UserId" />
+  <div class="form-group">
+    <label asp-for="Title">Title</label>
+    <input asp-for="Title" class="form-control" placeholder="Enter Title">
+	<span asp-validation-for="Title" class="text-danger"></span>
+  </div>
+  <div class="form-group">
+    <label asp-for="Description">Description</label>
+    <input asp-for="Description" class="form-control" placeholder="Enter Description">
+	<span asp-validation-for="Description" class="text-danger"></span>
+  </div>
+  <div class="form-group">
+    <label asp-for="Publisher">Publisher</label>
+    <input asp-for="Publisher" class="form-control" placeholder="Enter Publisher">
+	<span asp-validation-for="Publisher" class="text-danger"></span>
+  </div>
+  <div class="form-group">
+    <label asp-for="Developer">Developer</label>
+    <input asp-for="Developer" class="form-control"  placeholder="Enter Developer">
+	<span asp-validation-for="Developer" class="text-danger"></span>
+  </div>
+  <div class="form-group">
+    <label asp-for="Platform">Platform</label>
+    <select asp-for="Platform" class="form-control" asp-items="@Html.GetEnumSelectList<Platform>()">
+		<option>--Select--</option>
+	</select>
+	<span asp-validation-for="Platform" class="text-danger"></span>
+  </div>
+  <div class="form-group">
+    <label asp-for="Genre">Genre</label>
+	<select asp-for="Genre" class="form-control" asp-items="@Html.GetEnumSelectList<Genre>()">
+		<option>--Select--</option>
+	</select>
+	<span asp-validation-for="Genre" class="text-danger"></span>
+  </div>
+  <div class="form-group">
+    <label asp-for="Price">Price</label>
+    <input asp-for="Price" class="form-control"  placeholder="Enter Price">
+	<span asp-validation-for="Price" class="text-danger"></span>
+  </div>
+   <div class="form-group">
+    <label asp-for="MainImage">MainImage</label>
+    <input asp-for="MainImage" type="file" class="form-control"  placeholder="Enter MainImage">
+	<span asp-validation-for="MainImage" class="text-danger"></span>
+  </div>
+    <div class="form-group">
+    <label asp-for="Image_1">Image_1</label>
+    <input asp-for="Image_1" type="file" class="form-control"  placeholder="Enter Image_1">
+	<span asp-validation-for="Image_1" class="text-danger"></span>
+  </div>
+    <div class="form-group">
+    <label asp-for="Image_2">Image_2</label>
+    <input asp-for="Image_2" type="file" class="form-control"  placeholder="Enter Image_2">
+	<span asp-validation-for="Image_2" class="text-danger"></span>
+  </div>
+    <div class="form-group">
+    <label asp-for="Image_3">Image_3</label>
+    <input asp-for="Image_3" type="file" class="form-control"  placeholder="Enter Image_3">
+	<span asp-validation-for="Image_4" class="text-danger"></span>
+  </div>
+    <div class="form-group">
+    <label asp-for="Image_4">Image_4</label>
+    <input asp-for="Image_4" type="file" class="form-control"  placeholder="Enter Image_4">
+	<span asp-validation-for="Image_4" class="text-danger"></span>
+  </div>
+   
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

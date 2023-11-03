@@ -1,0 +1,88 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/bulatruslanovich/MyPracticC#/KeyShop/KeyShop.csproj": {}
+  },
+  "projects": {
+    "/home/bulatruslanovich/MyPracticC#/KeyShop/KeyShop.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/bulatruslanovich/MyPracticC#/KeyShop/KeyShop.csproj",
+        "projectName": "KeyShop",
+        "projectPath": "/home/bulatruslanovich/MyPracticC#/KeyShop/KeyShop.csproj",
+        "packagesPath": "/home/bulatruslanovich/.nuget/packages/",
+        "outputPath": "/home/bulatruslanovich/MyPracticC#/KeyShop/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/bulatruslanovich/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.22.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.112/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

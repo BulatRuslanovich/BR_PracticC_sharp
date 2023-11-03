@@ -1,0 +1,67 @@
+﻿@model Game
+@{
+}
+
+
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Portfolio Item Heading -->
+    <h1 class="my-4">@Model.Title</h1>
+  
+    <!-- Portfolio Item Row -->
+    <div class="row">
+  
+      <div class="col-md-8">
+        <img class="img-fluid" src="@Model.Images[0]" width="100%" height="500" alt="">
+      </div>
+  
+      <div class="col-md-4">
+        <p>@Model.Description</p>
+        <h3 class="my-3">Game's Info</h3>
+        <ul>
+          <li>Genre: @Model.Genre</li>
+          <li>Platform: @Model.Platform</li>
+          <li>Developer: @Model.Developer</li>
+          <li>Publisher: @Model.Publisher</li>
+          <li>Price: @Model.Price rubs</li>
+        </ul>
+      </div>
+  
+    </div>
+    <!-- /.row -->
+  
+    <!-- Related Projects Row -->
+    <h3 class="my-4">More images</h3>
+  
+    <div class="row">
+  
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+              <img class="img-fluid" src="@Model.Images[1]" width="500" height="300" alt="">
+            </a>
+      </div>
+  
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+              <img class="img-fluid" src="@Model.Images[2]" width="500" height="300" alt="">
+            </a>
+      </div>
+  
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+              <img class="img-fluid" src="@Model.Images[3]" width="500" height="300" alt="">
+            </a>
+      </div>
+  
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+              <img class="img-fluid" src="@Model.Images[4]" width="500" height="300" alt="">
+            </a>
+      </div>
+  
+    </div>
+    <!-- /.row -->
+  
+  </div>
+  <!-- /.container -->

@@ -1,0 +1,54 @@
+﻿@using KeyShop.Data.Enum
+@model Game
+
+<h1>Are you sure you want to DELETE this game?</h1>
+
+<form method="post" asp-action="Delete" enctype="multipart/form-data">
+  <div class="form-group">
+    <label asp-for="Title">Title</label>
+    <input asp-for="Title" class="form-control" placeholder="Enter Title">
+	<span asp-validation-for="Title" class="text-danger"></span>
+  </div>
+  <div class="form-group">
+    <label asp-for="Description">Description</label>
+    <input asp-for="Description" class="form-control" placeholder="Enter Description">
+	<span asp-validation-for="Description" class="text-danger"></span>
+  </div>
+  <div class="form-group">
+    <label asp-for="Publisher">Publisher</label>
+    <input asp-for="Publisher" class="form-control" placeholder="Enter Publisher">
+	<span asp-validation-for="Publisher" class="text-danger"></span>
+  </div>
+  <div class="form-group">
+    <label asp-for="Developer">Developer</label>
+    <input asp-for="Developer" class="form-control"  placeholder="Enter Developer">
+	<span asp-validation-for="Developer" class="text-danger"></span>
+  </div>
+  <div class="form-group">
+    <label asp-for="Platform">Platform</label>
+    <select asp-for="Platform" class="form-control" asp-items="@Html.GetEnumSelectList<Platform>()">
+		<option>--Select--</option>
+	</select>
+	<span asp-validation-for="Platform" class="text-danger"></span>
+  </div>
+  <div class="form-group">
+    <label asp-for="Genre">Genre</label>
+	<select asp-for="Genre" class="form-control" asp-items="@Html.GetEnumSelectList<Genre>()">
+		<option>--Select--</option>
+	</select>
+	<span asp-validation-for="Genre" class="text-danger"></span>
+  </div>
+  <div class="form-group">
+    <label asp-for="Price">Price</label>
+    <input asp-for="Price" class="form-control"  placeholder="Enter Price">
+	<span asp-validation-for="Price" class="text-danger"></span>
+  </div>
+ 
+</form>
+
+	<div class="form-group">
+		<form action="Delete" method="post">
+			<input type="hidden" asp-for="Id" />
+			<input type="submit" value="Confirm" class="btn btn-danger float-right mt-3" />
+		</form>
+ 	</div>
